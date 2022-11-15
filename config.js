@@ -55,7 +55,7 @@ global.nomorwa = '0'
 
 global.readMore = readMore
 global.author = '𝗠𝗶𝗸𝘂 𝗯𝗼𝘁𝘇'
-global.namebot = '​᯽ 𝗠𝗶𝗸𝘂 𝗯𝗼𝘁
+global.namebot = '​᯽ 𝗠𝗶𝗸𝘂 𝗯𝗼𝘁'
 global.wm = '© 𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝘽𝙮 𝗗𝗶𝗺𝘀'
 global.media = 'https://telegra.ph/file/5d45a3d1e12726d98c5e4.jpg'
 global.wm = '𝗠𝗶𝗸𝘂 𝗯𝘁𝘇 𝗠𝗱'
