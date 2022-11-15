@@ -1,0 +1,44 @@
+import fetch from 'node-fetch'
+
+let handler  = async (m, { conn, usedPrefix }) => {
+let pp = 'https://telegra.ph/file/a747af221defe8ac82f89.jpg'
+let name = await conn.getName(m.sender)
+let but1 = '𝐎𝐖𝐍𝐄𝐑'
+let bit = usedPrefix + 'owner'
+let donasi = `⮕ 𝐆𝗼𝐩𝐚𝐲 = [-]
+⮕ 𝐃𝐚𝐧𝐚 = [083143092635]
+⮕ 𝐒𝐚𝐰𝐞𝐫𝐢𝐚 = [-]
+⮕ 𝙋𝙪𝙡𝙨𝙖 = [083806299548]
+⮕ 𝙎𝙝𝙤𝙥𝙥𝙚 𝙋𝙖𝙮 = [-]
+𝘼𝙠𝙞𝙤 𝘽𝙤𝙩𝙋𝙖𝙮𝙢𝙚𝙣𝙩
+
+𝐍𝗼𝐭𝐞 : 𝐉𝐢𝐤𝐚 𝐒𝐮𝐝𝐚𝐡 𝐃𝗼𝐧𝐚𝐬𝐢 𝐒𝐢𝐥𝐚𝐡𝐤𝐚𝐧 𝐊𝐢𝐫𝗺
+𝐁𝐮𝐤𝐭𝐢 𝐊𝐞 𝐎𝐰𝐧𝐞𝐫!!
+
+𝐀𝐭𝐚𝐮 𝐊𝐥𝐢𝐤 𝐃𝐢 𝐁𝐚𝐰𝐚𝐡`
+await conn.sendButtonDoc(m.chat, ucapan + name, donasi, but1, bit, fkontak, {
+			contextInfo: {
+				forwardingScore: fsizedoc,
+				externalAdReply: {
+                    body: '© 𝗠𝗶𝗸𝘂 𝘽𝙤𝙩',
+    containsAutoReply: true,
+    mediaType: 1,
+    mediaUrl: hwaifu.getRandom(), 
+    renderLargerThumbnail: true,
+    showAdAttribution: true,
+    sourceId: '© 𝗠𝗶𝗸𝘂 𝘽𝙤𝙩',
+    sourceType: 'PDF',
+    previewType: 'PDF',
+    sourceUrl: sgc,
+    thumbnail: await(await fetch(pp)).buffer(),
+    thumbnailUrl: sgc,
+    title: '𝗠𝗶𝗸𝘂 𝘽𝙤𝙩 𝙈𝙙'  
+				}
+			}
+})
+}
+handler.tags = ['donasi', 'donate']
+handler.help = ['info']
+handler.command = /^(donate|donasi)$/i
+
+export default handler
